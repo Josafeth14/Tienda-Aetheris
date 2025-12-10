@@ -17,13 +17,13 @@
 
 /* ... */
 
+/* src/pages/HomePage.css - REGLAS DEL BANNER CORREGIDAS */
 .banner-text {
-  position: relative; /* ¡CLAVE! Hacemos este contenedor el "ancla" */
   flex-basis: 485px;
   background-color: #F2F9FE;
   padding: 1.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Alineamos los elementos verticalmente */
   justify-content: center;
   box-sizing: border-box;
 }
@@ -36,18 +36,14 @@
 
 .banner-legend {
   color: #9AAEB7;
-  margin-bottom: 1.5rem;
   font-size: 1rem;
   line-height: 1.4;
-  /* Damos un ancho máximo para dejar espacio al botón */
-  max-width: 80%;
+  /* El flex-grow asegura que este texto ocupe el espacio disponible, empujando el botón hacia abajo */
+  flex-grow: 1; 
 }
 
 .banner-button {
-  position: absolute; /* ¡CLAVE! El botón ahora flota sobre el contenedor */
-  bottom: 1.5rem;    /* Lo alineamos abajo (misma distancia que el padding) */
-  right: 1.5rem;      /* Lo alineamos a la derecha (misma distancia que el padding) */
-  width: auto; /* El botón se ajusta a su contenido */
+  width: fit-content;
   background-color: #CFCBC0;
   border: 2px solid #32444E;
   border-radius: 8px;
@@ -55,6 +51,7 @@
   cursor: pointer;
   font-weight: bold;
   font-size: 0.9rem;
+  margin-top: 1rem; /* Añadimos un margen para separarlo del texto */
 }
 
 /* ... el resto de las reglas se quedan igual ... */
