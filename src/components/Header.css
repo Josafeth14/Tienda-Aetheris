@@ -1,0 +1,163 @@
+/* src/components/Header.css */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+/* --- LOGO Y NOMBRE --- */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 45px; /* Ajusta el tamaño si es necesario */
+}
+
+.logo-text {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+/* --- MENÚ HAMBURGUESA --- */
+.hamburger-button {
+  margin-left: 1rem; /* Espacio después del nombre */
+}
+
+/* --- BARRA DE BÚSQUEDA CENTRAL --- */
+.header-center {
+  flex-grow: 1; /* Ocupa el espacio central */
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem; /* Espacio a los lados para que no se pegue */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #EBF4FB;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  max-width: 550px; /* Ancho máximo de la barra */
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #333;
+}
+
+.search-button-inner {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* --- ICONOS DE LA DERECHA --- */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Espacio entre los iconos */
+}
+
+/* --- ESTILOS GENERALES DE BOTONES E ICONOS --- */
+.header-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-text {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+}
+
+.heart-icon {
+  font-size: 2.2rem;
+  font-weight: lighter;
+}
+
+.user-icon {
+  font-size: 1.6rem;
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* --- ESTILOS PARA EL MENÚ DESPLEGABLE (YA DEBERÍAN ESTAR AQUÍ) --- */
+.user-menu-container {
+  position: relative;
+}
+
+.user-dropdown-menu {
+  position: absolute;
+  top: 130%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 200px;
+  z-index: 100;
+  overflow: hidden;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 0.5rem 0;
+}
+
+.logout-item {
+  color: #D9534F;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

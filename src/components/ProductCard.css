@@ -1,0 +1,74 @@
+/* src/components/ProductCard.css */
+.product-card {
+  width: 250px; /* Ancho de la tarjeta, ajústalo si es necesario */
+  background-color: #ffffff; /* TU COLOR DE FONDO */
+  border: 2px solid #90CAEF; /* TU COLOR DE BORDE */
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image-container {
+  background-color: #dfcec2; /* Fondo blanco para la imagen */
+  padding: 1rem;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-info {
+  padding: 1rem;
+  text-align: left;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+}
+
+.product-category {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6); /* Negro desvanecido al 60% es más legible que al 40% */
+  margin: 0 0 1rem 0;
+}
+
+.product-category a {
+  color: inherit;
+  text-decoration: none;
+}
+.product-category a:hover {
+  text-decoration: underline;
+}
+
+.product-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 1rem 0;
+}
+
+.details-button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #F2F9FE;
+  border: 2px solid #90CAEF;
+  border-radius: 8px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box; 
+}
+
+.details-button:hover {
+  background-color: #90CAEF;
+  color: #fff;
+}

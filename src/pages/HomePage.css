@@ -1,0 +1,139 @@
+/* src/pages/HomePage.css */
+
+/* --- REGLAS DEL BANNER --- */
+.promo-banner {
+  display: flex;
+  max-width: 1320px;
+  height: 184px;
+  border: 2px solid #90CAEF;
+  border-radius: 8px;
+  margin: 2rem auto;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* src/pages/HomePage.css */
+
+/* ... */
+
+.banner-text {
+  position: relative; /* ¡CLAVE! Hacemos este contenedor el "ancla" */
+  flex-basis: 485px;
+  background-color: #F2F9FE;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.banner-title {
+  font-family: 'New Rocker', cursive;
+  font-size: 2.0rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.banner-legend {
+  color: #9AAEB7;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  /* Damos un ancho máximo para dejar espacio al botón */
+  max-width: 80%;
+}
+
+.banner-button {
+  position: absolute; /* ¡CLAVE! El botón ahora flota sobre el contenedor */
+  bottom: 1.5rem;    /* Lo alineamos abajo (misma distancia que el padding) */
+  right: 1.5rem;      /* Lo alineamos a la derecha (misma distancia que el padding) */
+  width: auto; /* El botón se ajusta a su contenido */
+  background-color: #CFCBC0;
+  border: 2px solid #32444E;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* ... el resto de las reglas se quedan igual ... */
+
+.banner-image-container {
+  flex-basis: 805px;
+  height: 184px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- REGLAS DE CATEGORÍAS --- */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  max-width: 1320px; /* Para que se alinee con el banner */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ... (las reglas del banner se quedan igual) ... */
+
+/* ... (las reglas del banner se quedan igual) ... */
+
+.categories {
+  display: flex;
+  gap: 10px; /* TU ESPACIADO */
+  justify-content: center; /* Centramos los botones */
+  margin-bottom: 2rem;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-btn {
+  width: 266px;  /* TU ANCHO */
+  height: 100px; /* TU ALTO */
+  border: 2px solid #90CAEF;
+  border-radius: 8px;
+  background-color: #F2F9FE;
+  color: #333;
+  font-size: 1.2rem; /* Un poco más grande para que se vea bien */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex; /* Para centrar el texto perfectamente */
+  align-items: center;
+  justify-content: center;
+}
+/* ... (las reglas .active y :hover se quedan igual) ... */
+
+
+.category-btn.active {
+  background-color: #007BFF;
+  color: #fff;
+  border-color: #007BFF;
+}
+
+.category-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* src/pages/HomePage.css */
+
+/* ... todas las reglas del banner y categorías ... */
+
+.product-grid {
+  max-width: 1320px;
+  margin: 3rem auto; /* Más espacio arriba y centrado */
+  display: flex;
+  flex-wrap: wrap; /* Permite que los productos pasen a la siguiente línea */
+  justify-content: center; /* Centra los productos en la línea */
+  gap: 2rem; /* Espacio entre las tarjetas de producto */
+}

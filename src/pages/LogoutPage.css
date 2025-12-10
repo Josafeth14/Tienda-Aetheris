@@ -1,0 +1,24 @@
+.logout-modal-content {
+text-align: center;
+}
+
+.warning-icon {
+font-size: 4rem;
+margin-bottom: 1rem;
+}
+
+.logout-modal-content h2 {
+margin: 0 0 1rem 0;
+}
+
+.logout-modal-content p {
+color: #888;
+margin-bottom: 2rem;
+}
+
+/* Modificador para el botón de peligro */
+.modal-button-danger {
+background-color: #D9534F;
+border-color: #D9534F;
+color: #fff;
+}
